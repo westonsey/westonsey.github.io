@@ -1,0 +1,110 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #808080;
+    padding: 20px;
+    color: #fff;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+    height: auto; 
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+
+}
+
+.sidebarItem {
+    margin-bottom: 10px;
+}
+
+.sidebarItem button {
+    text-decoration: none;
+    background-color: #808080;
+    width: 250px;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.sidebarItem button:hover {
+    background-color: #CD5C5C; 
+}
+
+
+.title {
+    padding: 20px;
+    background-color: #CD5C5C;
+}
+
+.headshot{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+
+.AboutContainer{
+    border-radius: 25px;
+    background-color: #FFF5EE;
+    margin: 20px;
+}
+
+.AboutContainer p{
+    padding: 10px;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.AboutContainer h2{
+    padding: 10px;
+    margin: 20px;
+    font-size: 30px;
+}
+
+
+
+@media (max-width: 768px) {
+    .title {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
+.slideshow-container {
+    max-width: 1100px;
+    position: relative;
+    margin: auto;
+    
+}
+
+/* Style for each slide */
+.mySlides {
+    display: flex; /* Use flexbox to arrange images side by side */
+}
+
+/* Style for images within each slide */
+.mySlides img {
+    width: 350px; /* Adjust image width as needed */
+    height: 350px; /* Adjust image height as needed */
+    margin-right: 10px; /* Add some spacing between images */
+}
+
+
+/* Style for active dot */
+.active {
+    background-color: #717171;
+}
